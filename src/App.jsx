@@ -1,28 +1,14 @@
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
-import Cards from "./components/Cards";
-import Stats from "./components/Stats";
-import Transactions from "./components/Transactions";
-
-
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
-
-    <>
-   
-    <div className=" flex flex-col lg:flex-row min-h-screen bg-linear-to-r from-purple-500 to-purple-800 ">
-      <Sidebar />
-      <div className="flex-1 p-6">
-
-        <Header />
-        <Cards />
-         <Stats />
-          <Transactions />
-      </div>
-    </div>
-      </> 
-    
-
+    <Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   );
 }
