@@ -2,6 +2,7 @@
 
 This project is a web application built using React and Tailwind CSS, featuring a finance dashboard, authentication system, and a landing page. The goal of the project was to practice building a structured frontend application while integrating a real authentication system.
 
+ deployment link : https://finance-dashboard-dusky-mu-39.vercel.app/
 ---
 
 ## Overview
